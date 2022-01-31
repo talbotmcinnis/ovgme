@@ -114,12 +114,6 @@ IDR_MENU MENUEX
 LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 IDR_POPMOD MENU
 {
-    POPUP ""
-    {
-    }
-    POPUP ""
-    {
-    }
     POPUP "dummy"
     {
         MENUITEM "Toggle Selected", POP_TOGGLE

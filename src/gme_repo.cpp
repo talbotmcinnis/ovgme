@@ -145,7 +145,7 @@ struct GME_ReposMod_Struct
     memset(&version, 0, sizeof(GME_ModVers_Struct));
   }
 
-  clear() {
+  void clear() {
     memset(name, 0, 255*sizeof(wchar_t));
     memset(url, 0, 255);
     memset(&version, 0, sizeof(GME_ModVers_Struct));
@@ -671,7 +671,7 @@ void GME_RepoDnl_SetItemProgress(const wchar_t* name, int percent)
       if(percent < 0) {
         buff[0] = 0;
       } else {
-        swprintf(buff, L"%d %%", percent);
+        swprintf(buff, 255, L"%d %%", percent);
       }
       lvitm.pszText = buff;
       SendMessageW(hlv, LVM_SETITEMW, 0, (LPARAM)&lvitm);

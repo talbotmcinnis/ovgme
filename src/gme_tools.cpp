@@ -161,14 +161,14 @@ void GME_StrToUpper(std::wstring& str)
 {
   size_t s = str.length();
   for(unsigned i = 0; i < s; i++)
-    str[i] = std::towupper(str[i]);
+    str[i] = std::toupper(str[i]);
 }
 
 void GME_StrToUpper(std::string& str)
 {
   size_t s = str.length();
   for(unsigned i = 0; i < s; i++)
-    str[i] = std::towupper(str[i]);
+    str[i] = std::toupper(str[i]);
 }
 
 std::string GME_StrToUpper(const char* str)
@@ -176,7 +176,7 @@ std::string GME_StrToUpper(const char* str)
   std::string ret;
   size_t s = strlen(str);
   for(unsigned i = 0; i < s; i++)
-    ret.push_back(std::towupper(str[i]));
+    ret.push_back(std::toupper(str[i]));
   return ret;
 }
 
@@ -185,7 +185,7 @@ std::wstring GME_StrToUpper(const std::wstring& str)
   std::wstring ret;
   size_t s = str.size();
   for(unsigned i = 0; i < s; i++)
-    ret.push_back(std::towupper(str[i]));
+    ret.push_back(std::toupper(str[i]));
   return ret;
 }
 
@@ -196,14 +196,14 @@ void GME_StrToLower(std::wstring& str)
 {
   size_t s = str.length();
   for(unsigned i = 0; i < s; i++)
-    str[i] = std::towlower(str[i]);
+    str[i] = std::tolower(str[i]);
 }
 
 void GME_StrToLower(std::string& str)
 {
   size_t s = str.length();
   for(unsigned i = 0; i < s; i++)
-    str[i] = std::towlower(str[i]);
+    str[i] = std::tolower(str[i]);
 }
 
 std::string GME_StrToLower(const char* str)
@@ -211,7 +211,7 @@ std::string GME_StrToLower(const char* str)
   std::string ret;
   size_t s = strlen(str);
   for(unsigned i = 0; i < s; i++)
-    ret.push_back(std::towlower(str[i]));
+    ret.push_back(std::tolower(str[i]));
   return ret;
 }
 
